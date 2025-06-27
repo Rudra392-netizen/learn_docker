@@ -91,7 +91,8 @@ Issue	Cause	Solution
 
 ## 🛡 License
 This project is licensed under the MIT License.
-See the LICENSE file for details.
+
+See LICENSE for full terms.
 
 ## 🔗 GitHub Repository
 
