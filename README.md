@@ -22,8 +22,11 @@ Before running this project, ensure the following tools are installed on your sy
 ### Using NodeSource (LTS Version – e.g. Node 20)
 
 sudo apt update
+
 sudo apt install -y curl
+
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+
 sudo apt install -y nodejs
 
 This will also install npm
@@ -50,8 +53,11 @@ Visit http://localhost:3000 in your browser.
 If you're planning to run the app using Docker:
 
 sudo apt update
+
 sudo apt install -y docker.io
+
 sudo systemctl start docker
+
 sudo systemctl enable docker
 
 ## To run Docker without sudo (optional):
