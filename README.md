@@ -44,6 +44,7 @@ npm install
 
 ## Run the app:
 npm start
+
 Visit http://localhost:3000 in your browser.
 
 
@@ -72,14 +73,20 @@ docker build -t learn-docker-app .
 ## Run the container:
 
 docker run -p 3000:3000 learn-docker-app
+
 Access at: http://localhost:3000
 
 ## 🐞 Common Challenges
 Issue	Cause	Solution
+
 ❌ npm: command not found	Node.js not installed	See PREREQUISITES.md to install Node.js
+
 ❌ Docker container exits immediately	No command defined or port mismatch	Ensure CMD is defined in Dockerfile, and app listens on 0.0.0.0
+
 ⚠️ App runs locally but not in Docker	Port not exposed or incorrect host binding	Use app.listen(3000, '0.0.0.0') in your Node.js code
+
 🔁 Docker rebuilds too often	node_modules not excluded	Add node_modules to .dockerignore
+
 🔐 Permission denied on docker build	Docker requires sudo	Run as sudo docker ... or add user to docker group
 
 ## 🛡 License
